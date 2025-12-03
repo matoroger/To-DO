@@ -1,0 +1,389 @@
+/* PAGE BACKGROUND */
+body {
+  background: linear-gradient(135deg, #4f9dfc, #7f57ff);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CARD CONTAINER */
+.todo-card {
+  background: #ffffff;
+  width: 500px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+ 
+}
+.todo-title{
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #050113; 
+}
+/* TITLE */
+.todo-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* INPUT + BUTTON WRAPPER */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* INPUT FIELD */
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: #7f57ff;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  background: #7f57ff;
+  color: white;
+  border: none;
+  width: 45px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #6b45e6;
+}
+
+/* TASK LIST ITEM */
+.task-item {
+  background: rgb(88, 85, 85);
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #e63e39;
+}
+
+/* FOOTER */
+.footer-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-row p{
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+/* CLEAR BUTTON */
+.clear-btn {
+  background: #7f57ff;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.task-desc {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #e8e8e8;
+}
+
+.clear-btn:hover {
+  background: #6b45e6;
+}
+/* READ BUTTON */
+.read-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* EDIT BUTTON */
+.edit-btn {
+  background: #FFA000;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+  background: #2979FF;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: #E53935;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* EDIT INPUT */
+.edit-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* READ MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.close-btn {
+  margin-top: 15px;
+  background: #555;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-item {
+  background: #4a4848;
+  padding: 18px 20px;
+  border-radius: 14px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.task-text {
+  font-size: 18px;
+  color: white;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.task-buttons button {
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+
+/* BUTTONS ---------------------------------------------------- */
+.read-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #FFA000;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #2979FF;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #E53935;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* READ MODAL ---------------------------------------------------- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* <-- FIXED so modal appears! */
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  width: 300px;
+  text-align: center;
+  color: black;
+}
+
+.close-btn {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+/* Popup overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.2s ease;
+}
+
+/* Popup box */
+.modal-box {
+  background: #ffffff;
+  color: #222;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: popIn 0.2s ease;
+}
+
+.modal-box h2 {
+  margin-top: 0;
+}
+
+.close-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.edit-input {
+  padding: 8px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.save-btn,
+.edit-btn,
+.read-btn,
+.delete-btn {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn { background: #4CAF50; color: white; }
+.edit-btn { background: #2196F3; color: white; }
+.read-btn { background: #673AB7; color: white; }
+.delete-btn { background: #E53935; color: white; }
+
+
+
+.task-text {
+  color: white;
+  font-size: 18px;
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
